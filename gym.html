@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Design</title>
+    <style>
+        .body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('image/fitness.jpg');
+            color: wheat;
+
+        }
+
+        .div {
+            position: absolute;
+            left: 3%;
+            top: 5px;
+            text-align: center;
+            color: white;
+            margin: 2% 0%;
+            border: 3px solid gray;
+            border-radius: 10px;
+
+
+        }
+
+        .div img {
+            border-radius: 10px;
+        }
+
+        .mid {
+            border: 2px black;
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+            text-align: center;
+
+
+
+
+        }
+
+        .rig {
+            display: inline-block;
+
+            position: absolute;
+            right: 3%;
+            top: 5px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+            padding-left: 20px;
+
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(249, 249, 249);
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+
+
+        }
+
+        .btn {
+            margin: 5px;
+            padding: 5px;
+            font-size: medium;
+            color: white;
+            border-radius: 4px;
+            background-color: rgb(111, 107, 107);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .btn:hover {
+            background-color: darkgrey;
+            text-decoration: dotted;
+        }
+        .container{
+            color: white;
+            border: 3px solid rgb(195, 186, 189);
+            width: 450px;
+            
+            height: 320px;
+            border-radius: 8px;
+            margin-top: 270px;   
+            margin-left: 50px;
+            text-align: center;
+            text-shadow:4px;
+         }
+         .mainform{
+            padding: 5px;
+            margin: 2px 4px;
+         }
+         .mainform input{
+            width: 205px;
+            margin: 5px;
+            padding: 4px;
+            font-size: medium;
+            background-color: rgb(199, 255, 255);
+           
+         }
+         .logo{
+            margin-left: 440px;
+            border: 2px solid green;
+            
+         }
+    </style>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="div">
+            <img src="data:image/jpeg;base64,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"
+                alt="error">
+            <h2> She_26_club</h2>
+
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#"> Home</a> </li>
+                    <li> <a href="#"> About us</a></li>
+                    <li> <a href="#"> Fitness calculator</a></li>
+                    <li> <a href="#"> Contact us</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+        <div class="rig">
+            <button class="btn">Join us</button><button class="btn">Drop a mail</button>
+        </div>
+    </header>
+   
+        <div class="container">
+            <h2>Join the effordable gym now</h2>
+            <form action="non.ohp">
+                <div class="mainform">
+                   
+                    <input type="text" name="" placeholder="Enter Your Name">
+                    <input type="text" name="" placeholder="Enter Your Place">
+                    <input type="text" name="" placeholder="Enter Your Age">
+                    <input type="text" name="" placeholder="Aim of Gender">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+
+        </div>
+        
+
+</body>
+
+</html>
